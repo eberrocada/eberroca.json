@@ -33,7 +33,23 @@
                 "criteria": [],
                 "criteriaMustSatisfy": "all",
                 "comments": ""
-            }
+            },
+            {
+                "name": "Caching Rule",
+                
+                "behaviors": [
+                    {
+                        "name": "caching",
+                        "options": {
+                            "behavior": "NO_STORE"
+                      }
+                    }
+                ],
+                "criteria": [],
+                "criteriaMustSatisfy": "all",
+                "comments": ""
+            }     
+            
 
         ],
         "behaviors": [
