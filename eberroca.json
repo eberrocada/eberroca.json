@@ -10,30 +10,31 @@
         "name": "default",
         "children": [
             {
-                "name": "Parent Rule",
-                "children": [
+                "name": "CP codes",
+
+                "behaviors": [ 
                     {
-                        "name": "Child Rule 1",
-                        "children": [],
-                        "behaviors": [],
-                        "criteria": [],
-                        "criteriaMustSatisfy": "all",
-                        "comments": ""
-                    },
-                    {
-                        "name": "Child Rule 2",
-                        "children": [],
-                        "behaviors": [],
-                        "criteria": [],
-                        "criteriaMustSatisfy": "all",
-                        "comments": ""
+                        "name": "cpCode",
+                        "options": {
+                            "value": {
+                                "id": 1430518,
+                                "description": "ion.devops-training.ranet.me",
+                                "products": [
+                                    "Fresca"
+                                ],
+                                "createdDate": 1674671504000,
+                                "cpCodeLimits": null,
+                                "name": "ion.devops-training.ranet.me"
+                            }
+                        }
                     }
                 ],
-                "behaviors": [],
+
                 "criteria": [],
                 "criteriaMustSatisfy": "all",
                 "comments": ""
             }
+
         ],
         "behaviors": [
             {
