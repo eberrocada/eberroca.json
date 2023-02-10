@@ -64,6 +64,56 @@
                 "criteria": [],
                 "criteriaMustSatisfy": "all",
                 "comments": ""
+            },
+            {
+                "name": "Access Control",
+
+                
+                "behaviors": [
+                   {
+                      "name": "denyAccess",
+                      "options": {
+                      "reason": "no-stg-spoofing",
+                      "enabled": true
+                                 }
+                    }
+                ],
+                "criteria": [],
+                "criteriaMustSatisfy": "all",
+                "comments": ""
+            },
+            {
+                "name": "Access Control",
+
+                
+                "behaviors": [
+                   {
+                      "name": "denyAccess",
+                      "options": {
+                      "reason": "Access-Denied",
+                      "enabled": true
+                                 }
+                    }
+                ],
+                "criteria": [
+    {
+        "name": "contentDeliveryNetwork",
+        "options": {
+            "matchOperator": "IS",
+            "network": "STAGING"
+        }
+    },
+    {
+        "name": "requestHeader",
+        "options": {
+            "matchOperator": "DOES_NOT_EXIST",
+            "matchWildcardName": false,
+            "headerName": "x-stg-auth"
+        }
+    }
+],
+"criteriaMustSatisfy": "all",
+"comments": ""
             }
             
             
