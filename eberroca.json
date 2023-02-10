@@ -48,7 +48,24 @@
                 "criteria": [],
                 "criteriaMustSatisfy": "all",
                 "comments": ""
-            }     
+            },
+            {
+                "name": "Remove Vary Header",
+
+                
+                "behaviors": [
+                    {
+                        "name": "removeVary",
+                        "options": {
+                        "enabled": true
+                    }
+            }
+                ],
+                "criteria": [],
+                "criteriaMustSatisfy": "all",
+                "comments": ""
+            }
+            
             
 
         ],
